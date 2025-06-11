@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from blog import views
+from blog import views as ap1
+from app import views as ap2
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('fun/', views.myWeb, name='myWeb'),
-    path('html/', views.myWeb_html, name='myWeb_html'),
-    path('math/', views.myWeb_math, name='myWeb_math')
+    path('fun/', ap1.myWeb, name='myWeb'),
+    path('html/', ap1.myWeb_html, name='myWeb_html'),
+    path('math/', ap1.myWeb_math, name='myWeb_math'),
+    path('mathapp/', ap2.myapp_math, name='myapp_math')
 ]
