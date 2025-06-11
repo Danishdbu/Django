@@ -20,4 +20,4 @@ from datetime import date, datetime
 # tag 
 def learn_dj(req):
     d = datetime.now()
-    return render(req, 'course/django.html',context={'nm':True,'range': range(6)})
+    return render(req, 'course/django.html',context={'nm':True,'range': range(6),'student':['raj','rahul','anu']})
