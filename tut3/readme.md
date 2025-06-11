@@ -1,4 +1,3 @@
-In Django, templates are used to generate dynamic HTML (or other formats) that are sent to the client. They allow you to separate presentation logic from business logic, making your code modular and reusable. Below, I’ll explain Django templates, their syntax, how they are processed, and the standard folder structure for templates in a Django project.
 
 ### 1. **What are Django Templates?**
 Django templates are text files (usually HTML) that define the structure and layout of the output. They use placeholders and logic (like loops and conditionals) to render dynamic content based on data provided by views. The Django template engine processes these templates to generate the final output.
