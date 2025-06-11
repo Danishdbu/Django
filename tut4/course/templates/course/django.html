@@ -8,6 +8,21 @@
 <body>
     <h1> Hello jee Django 5 </h1>
     <!-- Example 1 -->
-     <p>NAME : {{name}}</p>
+     <!-- <p>NAME : {{name}}</p> -->
+     <!-- Filter -->
+      <!-- <p>NAME : {{name|upper}}</p>
+      <p>NAME : {{name|length}}</p>
+      <p>NAME : {{name|lower}}</p> -->
+
+      <!-- Date -->
+       {% comment %} <h2>Date Time : {{dt}}</h2>
+       <h2>Date Time : {{dt|date}}</h2>
+       <h2>Date Time : {{dt|date:'D d M Y'}}</h2>
+       <h2>Date Time : {{dt|time}}</h2> {% endcomment %}
+       {% comment %} Tag {% endcomment %}
+       {% if nm %}
+       <h2>Hello If tag</h2>
+       {% endif %}
+       {% for x in range %} <h2>Hello loop {{x}} tag</h2> {% endfor %}
 </body>
 </html>
