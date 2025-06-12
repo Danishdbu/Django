@@ -459,7 +459,7 @@ Create a folder `notes/templates/` for your HTML files.
 4. **Start small**: Add a form to `note_create` later when you’re ready.
 
 ---
-# HTemplate inside Template using Include Tag in Django
+# Template inside Template using Include Tag in Django
 ---
 In Django, `{% include %}` is a **template tag** used to **include one HTML template inside another**. It helps in **breaking templates into reusable components** like headers, footers, navbars, etc.
 
