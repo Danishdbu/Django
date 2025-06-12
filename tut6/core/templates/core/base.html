@@ -8,11 +8,7 @@
     {% block corecss %}<link rel="stylesheet" href="{% static 'core/css/style.css' %}">{% endblock corecss %}
 </head>
 <body>
-    <ul>
-        <li><a href="{%url 'home'%}">Home</a></li>
-        <li><a href="{%url 'django'%}">Django</a></li>
-        <li><a href="{%url 'python'%}">Python</a></li>
-    </ul>
+    {% include "core/components/nav.html" %}
     <h1>{% block content %}{% endblock content %}</h1>
     
 </body>

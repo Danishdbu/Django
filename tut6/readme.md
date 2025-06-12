@@ -458,3 +458,96 @@ Create a folder `notes/templates/` for your HTML files.
 3. **Check your URLs**: If a link doesn’t work, check the name in `urls.py` and the `{% url %}` tag.
 4. **Start small**: Add a form to `note_create` later when you’re ready.
 
+---
+In Django, `{% include %}` is a **template tag** used to **include one HTML template inside another**. It helps in **breaking templates into reusable components** like headers, footers, navbars, etc.
+
+---
+
+### ✅ Syntax of `{% include %}`
+
+```django
+{% include 'relative/path/to/template.html' %}
+```
+
+---
+
+### ✅ 1. Example Folder Structure
+
+```
+myproject/
+├── myapp/
+│   └── templates/
+│       └── myapp/
+│           ├── base.html
+│           ├── header.html
+│           ├── footer.html
+│           └── home.html
+```
+
+---
+
+### ✅ 2. Create a Reusable Template (e.g., `header.html`)
+
+**`header.html`**
+
+```html
+<header>
+    <h1>Welcome to My Website</h1>
+</header>
+```
+
+---
+
+### ✅ 3. Use `{% include %}` in Another Template
+
+**`home.html`**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+
+{% include 'myapp/header.html' %}
+
+<main>
+    <p>This is the homepage content.</p>
+</main>
+
+{% include 'myapp/footer.html' %}
+
+</body>
+</html>
+```
+
+---
+
+### ✅ 4. Include with Variables (Optional)
+
+If you want to pass variables:
+
+```html
+{% include 'myapp/greeting.html' with name='Danish' %}
+```
+
+**`greeting.html`**
+
+```html
+<p>Hello, {{ name }}!</p>
+```
+
+---
+
+### ✅ Summary
+
+| Feature         | Description                                    |
+| --------------- | ---------------------------------------------- |
+| `{% include %}` | Embeds another template into current one       |
+| `with`          | Passes variables to the included template      |
+| Reusability     | Great for components like nav, footer, sidebar |
+
+---
+
+Let me know if you want to combine `{% include %}` with `{% block %}` and `{% extends %}` for full template inheritance!
