@@ -550,6 +550,4 @@ If you want to pass variables:
 | `with`          | Passes variables to the included template      |
 | Reusability     | Great for components like nav, footer, sidebar |
 
----
 
-Let me know if you want to combine `{% include %}` with `{% block %}` and `{% extends %}` for full template inheritance!
