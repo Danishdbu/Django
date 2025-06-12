@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'course/css/style.css'%}">
+    <title>Django</title>
+</head>
+<body>
+    <h1> {{nm}} 5  with static file</h1>
+    <img class="img" src="{% static 'course/images/p45-2.jpg'%}" alt="">
+    <button onclick="disp()">Click me</button>
+
+
+   <script src="{% static 'course/js/script.js'%}"></script>
+</body>
+</html>
