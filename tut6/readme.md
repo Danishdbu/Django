@@ -459,6 +459,8 @@ Create a folder `notes/templates/` for your HTML files.
 4. **Start small**: Add a form to `note_create` later when you’re ready.
 
 ---
+# Template inside Template using Include Tag in Django
+---
 In Django, `{% include %}` is a **template tag** used to **include one HTML template inside another**. It helps in **breaking templates into reusable components** like headers, footers, navbars, etc.
 
 ---
@@ -548,6 +550,4 @@ If you want to pass variables:
 | `with`          | Passes variables to the included template      |
 | Reusability     | Great for components like nav, footer, sidebar |
 
----
 
-Let me know if you want to combine `{% include %}` with `{% block %}` and `{% extends %}` for full template inheritance!
