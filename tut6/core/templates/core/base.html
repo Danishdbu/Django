@@ -9,9 +9,9 @@
 </head>
 <body>
     <ul>
-        <li>Home</li>
-        <li>Django</li>
-        <li>Python</li>
+        <li><a href="{%url 'home'%}">Home</a></li>
+        <li><a href="{%url 'django'%}">Django</a></li>
+        <li><a href="{%url 'python'%}">Python</a></li>
     </ul>
     <h1>{% block content %}{% endblock content %}</h1>
     
