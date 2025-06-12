@@ -1,4 +1,5 @@
 {% extends "core/base.html" %}
+{% load static %}
 {% block title %}Django{% endblock title %}
-
+{% block corecss %}<link rel="stylesheet" href="{% static 'course/css/style.css' %}">{% endblock corecss %}
 {% block content %}Django page{% endblock content %}
