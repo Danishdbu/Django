@@ -2,11 +2,6 @@
 
 This guide outlines the steps to set up a Django project, including the folder and file structure.
 
-## Prerequisites
-- Python 3.8+ installed
-- pip (Python package manager)
-- virtualenv (recommended for isolated environments)
-
 ## Setup Steps
 
 1. **Create a Virtual Environment**
