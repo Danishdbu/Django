@@ -1,3 +1,4 @@
+from student.models import Profile
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from student.forms import Registration 
@@ -6,12 +7,12 @@ def registration(req):
     if req.method == 'POST':
         form = Registration(req.POST)
         if form.is_valid():
-            name = form.cleaned_data['name']
-            email = form.cleaned_data['email']
-            password = form.cleaned_data['password']
-            print(name)
-            print(email)
-            print(password)
+            nm = form.cleaned_data['name']
+            em = form.cleaned_data['email']
+            pw= form.cleaned_data['password']
+            # save data into databases
+            user = Profile(name=nm,email=em,password=pw)
+            user.save()
             return HttpResponseRedirect('/student/success')
     else:
         form = Registration()
