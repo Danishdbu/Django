@@ -38,7 +38,7 @@ class User(AbstractBaseUser):
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
     is_customer = models.BooleanField(default=True)
-    is_seller = models.BooleanField(default=True)
+    is_seller = models.BooleanField(default=False)
     created_at = models.DateField(auto_now_add=True)
     updated_at = models.DateField(auto_now=True)
 
