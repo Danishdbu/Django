@@ -46,7 +46,7 @@ initial-scale=1.0"
                 >
               </li>
               <li>
-                 <form method="post" > {% comment %}//action="{% url 'logout' %} {% endcomment %}
+                 <form method="post" action="{% url 'logout' %}"> 
                   {% csrf_token %}
                   <button
                     type="submit"
